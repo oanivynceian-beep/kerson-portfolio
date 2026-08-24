@@ -24,6 +24,47 @@ import lentSpc7 from './LENT SPC 2026/CRISM-153.jpg';
 import lentSpc8 from './LENT SPC 2026/CRISM-157.jpg';
 import lentSpc9 from './LENT SPC 2026/CRISM-200.jpg';
 
+import sol1 from './SCHOOL OF LAW/SOL GRAD.jpg';
+import sol2 from './SCHOOL OF LAW/SOL GRAD-4.jpg';
+import sol3 from './SCHOOL OF LAW/SOL GRAD-9.jpg';
+import sol4 from './SCHOOL OF LAW/SOL GRAD-129.jpg';
+import sol5 from './SCHOOL OF LAW/SOL GRAD-132.jpg';
+import sol6 from './SCHOOL OF LAW/SOL GRAD-200.jpg';
+import sol7 from './SCHOOL OF LAW/SOL GRAD-219.jpg';
+import sol8 from './SCHOOL OF LAW/SOL GRAD-221.jpg';
+import sol9 from './SCHOOL OF LAW/SOL GRAD-237.jpg';
+import sol10 from './SCHOOL OF LAW/SOL GRAD-244.jpg';
+
+import brgy1 from './BRGY 9-A CANDIDATES/ROY00230.jpg';
+import brgy2 from './BRGY 9-A CANDIDATES/ROY00270.jpg';
+import brgy3 from './BRGY 9-A CANDIDATES/ROY00288.jpg';
+import brgy4 from './BRGY 9-A CANDIDATES/ROY00321.jpg';
+import brgy5 from './BRGY 9-A CANDIDATES/ROY00343.jpg';
+import brgy6 from './BRGY 9-A CANDIDATES/ROY00386.jpg';
+import fbReelThumb from './fb-reel-thumb.jpg';
+
+import yuna1 from './YUNA DEBUT/1 (1).jpg';
+import yuna2 from './YUNA DEBUT/2 (1).jpg';
+import yuna3 from './YUNA DEBUT/3 (1).jpg';
+import yuna4 from './YUNA DEBUT/4.jpg';
+import yuna5 from './YUNA DEBUT/5.jpg';
+import yuna6 from './YUNA DEBUT/6.jpg';
+import yuna7 from './YUNA DEBUT/7.jpg';
+import yuna8 from './YUNA DEBUT/8.jpg';
+import yuna9 from './YUNA DEBUT/10.jpg';
+import yuna10 from './YUNA DEBUT/11.jpg';
+
+import har1 from './HOT AUGUST RACES/DSC08631.jpg';
+import har2 from './HOT AUGUST RACES/DSC08807.jpg';
+import har3 from './HOT AUGUST RACES/DSC09111-2.jpg';
+import har4 from './HOT AUGUST RACES/DSC09257.jpg';
+import har5 from './HOT AUGUST RACES/DSC09272.jpg';
+import har6 from './HOT AUGUST RACES/DSC09422.jpg';
+import har7 from './HOT AUGUST RACES/DSC09439.jpg';
+import har8 from './HOT AUGUST RACES/DSC09500.jpg';
+import har9 from './HOT AUGUST RACES/DSC09806.jpg';
+import har10 from './HOT AUGUST RACES/DSC09866.jpg';
+
 export const HERO_IMAGE = 'https://lh3.googleusercontent.com/aida-public/AB6AXuBHcuIbPz7jVJm6Gv0HC_K1iWcDJZJ1UcW3UM9IX6YD7AHMY72qcSnQ9qxGyGcteRAdT-117IYFberQSB9ZLpu4rzrRwJgNKVSkraioYyjJ1u11V_R4yxAVjt4T6dhNNL4-YafXbArRLa8pQaLM0aBcLFysRVoceeUjAnle28EUoCvEwmmBeU93lIvazMcwdQkwzFvW_xWynIKDeDpNre0tGkmylEtPk8Zao7whmxZ0U9lYjgTzIfw';
 
 export const HERO_VIDEO = {
@@ -159,100 +200,142 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     },
   },
   {
-    id: 'palaro-marikina-2024',
-    title: 'Palarong Pambansa 2024: Peak Motion',
-    category: 'Editorial',
+    id: 'school-of-law-2024',
+    title: 'School of Law(USEP)',
+    category: 'Portrait',
     mainCategory: 'PHOTOGRAPHY',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuB2eSIcYBkgN58PevQAyNXCFHBzWNCzPr3oHToY2-Mk_ewzXEv_SyY1fmYrCJIauaAPGECtLctAX4A5TCMtVJsVp9M-rd2lZcwUQyPq732YESdRL9vqaJSP1nmsFkrZ5LldtNRP1Z810tkCEPj6oxi_KLr1KN37v9Wwy2_NSE7FlFwP-TrH4UJWOSTgry4EN1Sx1JZnrCgGDQhK7R6BcBVNYCoC6n4HVy4_Zjenc_F07ZKN6C8Ag6Q',
+    image: sol1,
+    gallery: [
+      sol2,
+      sol3,
+      sol4,
+      sol5,
+      sol6,
+      sol7,
+      sol8,
+      sol9,
+      sol10
+    ],
     aspectRatio: '4/5',
     year: '2024',
-    client: 'Palarong Pambansa 2024 Media Pool',
+    client: 'School of Law Graduates',
     director: 'Kerson John Parame',
     cinematographer: 'Kerson John Parame',
-    description: 'High-speed sports action and raw emotional resilience captured trackside during the national athletic games in Marikina City. High-contrast shutter timing freezing peak physical exertion and celebratory moments.',
-    technicalSpecs: {
-      camera: 'High-Speed Sports Body / 70-200mm f/2.8',
-      lens: 'Fast Telephoto Optics',
-      format: '1/2000s High-Speed RAW / Adobe LrC Graded',
-      location: 'Marikina Sports Center, Marikina City',
-    },
-  },
-  {
-    id: 'san-pedro-cathedral-sacred-light',
-    title: 'San Pedro Cathedral: Sacred Sanctuaries',
-    category: 'Architecture',
-    mainCategory: 'PHOTOGRAPHY',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD2n-wjRun4A1qH0TW6Zs3X8TaF9cjzx9r72tf1daXp8x0Te5QanPfD33aFKIty8ZpjfyrZauhWkJiRfCr1-oH82emtwhq8PALLn8iMxG8LTPhRHkupv7gMK95xwXPoDnJ1g4JSQOGdQILRxXUkvd36okOItwgEkSdk5q2sLcgwanuCbpb9X0EvwnCNP30ZNAdE0THo5KwhEfoBEWT445y5cLgq3WvuiJTP5KYzxU5l03RSDFlOJVk',
-    aspectRatio: '16/9',
-    year: '2024',
-    client: 'Archdiocese of Davao • SOCCOM Media',
-    director: 'Kerson John Parame',
-    cinematographer: 'Kerson John Parame',
-    description: 'Documentary and architectural visual study of San Pedro Cathedral in Davao City. Atmospheric natural light filtering through sacred arches, solemn liturgical ceremonies, and deep community communion.',
-    technicalSpecs: {
-      camera: 'Low-Light Full-Frame Sensor',
-      lens: '24-70mm f/2.8 & 35mm Prime',
-      format: 'Ambient Lit RAW / Adobe Lr Graded',
-      location: 'San Pedro Cathedral, Davao City',
-    },
-  },
-  {
-    id: 'um-primum-chronicles',
-    title: 'UM Primum: University Motion Chronicles',
-    category: 'Film',
-    mainCategory: 'FILM',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCqhIpsDot_uaiKHQ0NE1v_sZqRjkhk7BtP-X8QsGynbC_jSBQakZWjBB8bxRls7myBTXUyZhMw7BWvjvvpoH52BXk-nsjDnlQDkeMIz8lSEphKZz5SrsY4fTdSSWr0RdUdF7idvPDPLWWr6oHyLOxkxLtqIx_XHHccmc0C7AeD_o5T-v909oQ5Z_2aC2JBp5IrzXagdVagO_X2hv6Oqq9vhzCKpxLwQI5IIwNUCX-gES3d8rfLL_4',
-    aspectRatio: '3/4',
-    year: '2023 - 2024',
-    client: 'University of Mindanao • Primum',
-    director: 'Kerson John Parame',
-    cinematographer: 'Kerson John Parame',
-    description: 'Dynamic campus life, major collegiate events, and narrative video documentation. Produced with rhythmic pacing, cinematic motion b-roll, and sharp narrative clarity edited on Adobe Premiere Pro.',
-    technicalSpecs: {
-      camera: '4K Cinema Rig / 3-Axis Gimbal',
-      lens: 'Cinema Primes 24mm & 50mm',
-      format: '4K 60fps / Adobe Premiere Pro Mastered',
-      location: 'University of Mindanao, Matina Campus, Davao',
-    },
-  },
-  {
-    id: 'rmc-media-perspectives',
-    title: 'Rizal Memorial Colleges: Media In Action',
-    category: 'Editorial',
-    mainCategory: 'PHOTOGRAPHY',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuB1TfapTj8UvGmjcGHYtBkEI0AXjZXA_tMzcZn-jh_cCBTh_5nuKJdeIl6Lq4JoTNm5ZRtlGgUibrksfUtujKrzTj9m6wXEsiwNwz4YnaDSa5JewrSwteQ5UgUF6xySfjBtisaGhT7GECFXXgc7X1uu5aQcnHZTqvWyTrUnHLX7Z_Xi0E6TF4v28_1perd4epjMWc9S4txrDEjjQIj33SrIVGXOhOr0DI035lA_DVc-FDmNvmGimyE',
-    aspectRatio: 'square',
-    year: '2024',
-    client: 'Rizal Memorial Colleges (RMC) Media',
-    director: 'Kerson John Parame',
-    cinematographer: 'Kerson John Parame',
-    description: 'Institutional photojournalism capturing student life, academic symposiums, and sports achievements at Rizal Memorial Colleges with authentic editorial framing and rich contrast.',
+    description: 'Graduation portrait collection for the School of Law. Capturing the milestone and professional elegance of the new graduates. Click to view the full gallery.',
     technicalSpecs: {
       camera: 'High-Resolution Mirrorless',
-      lens: '50mm f/1.4 Portrait Prime',
+      lens: 'Portrait Primes',
       format: 'Editorial Still / Adobe Lightroom Classic',
-      location: 'Rizal Memorial Colleges, Davao City',
+      location: 'Davao City',
     },
   },
   {
-    id: 'obsidian-essence-reels',
-    title: 'Cinematic Reel & Commercial Visuals',
-    category: 'Commercial',
-    mainCategory: 'FILM',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCSS0rUBQ8tkY68xL1UfSGiI29cbAftrFGt__BkRZxzz957HTus4TpeHjRnUKpA24x2gOMRk3cQw7SQmXPh0ydJb2kRb8kCSDRm6K9TDfYQTTsHnyOBtG4cpKz3pagJul41d3wigAQecPGnHF2Ep4w_Ppm0-S50ky72uFoQBI9-D6O0jvWhHedUR4bz6tC77VCYdq275VgVGZgW9ppIYU80cMhI1b_QRhclFC1fxDbugXqqpS25nto',
-    aspectRatio: '3/2',
+    id: 'brgy-9a-candidates',
+    title: 'Brgy. 9-A Candidates',
+    category: 'Portrait',
+    mainCategory: 'PHOTOGRAPHY',
+    image: brgy1,
+    gallery: [
+      brgy2,
+      brgy3,
+      brgy4,
+      brgy5,
+      brgy6
+    ],
+    aspectRatio: '4/5',
     year: '2024',
-    client: 'Freelance Commercial & Brand Commissions',
+    client: 'Barangay 9-A Candidates',
     director: 'Kerson John Parame',
     cinematographer: 'Kerson John Parame',
-    description: 'Punchy, social-first commercial reels and product videos designed for maximum viewer retention. Crafted using Premiere Pro and CapCut with synchronized beat transitions and color correction.',
+    description: 'Official candidate portrait series for Barangay 9-A. Clean, professional editorial portraits capturing the essence of each candidate. Click to view the full gallery.',
     technicalSpecs: {
-      camera: '4K Log Sensor',
-      lens: 'Macro & Ultra-Wide Cinema Lenses',
-      format: '4K Vertical & Widescreen / Adobe Pr & CapCut',
-      location: 'Davao City Studios',
+      camera: 'High-Resolution Mirrorless',
+      lens: 'Portrait Primes',
+      format: 'Editorial Still / Adobe Lightroom Classic',
+      location: 'Davao City',
     },
   },
+  {
+    id: 'fb-reel-2024',
+    title: 'Facebook Reel — KAPE NI BORDS',
+    category: 'Commercial',
+    mainCategory: 'FILM',
+    image: fbReelThumb,
+    externalVideoUrl: 'https://www.facebook.com/reel/2073791989893539',
+    aspectRatio: '16/9',
+    year: '2024',
+    client: 'Kerson John Parame',
+    director: 'Kerson John Parame',
+    cinematographer: 'Kerson John Parame',
+    description: 'A short-form cinematic reel published on Facebook. Fast-paced editing with dynamic transitions and color grading.',
+    technicalSpecs: {
+      camera: '4K Cinema Mirrorless',
+      lens: 'Cinema Primes',
+      format: 'Vertical / Widescreen Social Reel',
+      location: 'Davao City',
+    },
+  },
+  {
+    id: 'yuna-debut',
+    title: 'Yuna Debut',
+    category: 'Portrait',
+    mainCategory: 'PHOTOGRAPHY',
+    image: yuna1,
+    gallery: [
+      yuna2,
+      yuna3,
+      yuna4,
+      yuna5,
+      yuna6,
+      yuna7,
+      yuna8,
+      yuna9,
+      yuna10
+    ],
+    aspectRatio: '4/5',
+    year: '2024',
+    client: 'Yuna',
+    director: 'Kerson John Parame',
+    cinematographer: 'Kerson John Parame',
+    description: 'Debut portrait collection for Yuna. A milestone celebration captured with elegance and warmth. Click to view the full gallery.',
+    technicalSpecs: {
+      camera: 'High-Resolution Mirrorless',
+      lens: 'Portrait Primes',
+      format: 'Editorial Still / Adobe Lightroom Classic',
+      location: 'Davao City',
+    },
+  },
+  {
+    id: 'hot-august-races',
+    title: 'Hot August Races',
+    category: 'Editorial',
+    mainCategory: 'PHOTOGRAPHY',
+    image: har1,
+    gallery: [
+      har2,
+      har3,
+      har4,
+      har5,
+      har6,
+      har7,
+      har8,
+      har9,
+      har10
+    ],
+    aspectRatio: '3/2',
+    year: '2024',
+    client: 'Hot August Races',
+    director: 'Kerson John Parame',
+    cinematographer: 'Kerson John Parame',
+    description: 'High-energy motorsports and racing event coverage. Fast-paced action captured with precision — raw speed, mechanical beauty, and the thrill of competition. Click to view the full gallery.',
+    technicalSpecs: {
+      camera: 'High-Speed Sports Body',
+      lens: 'Fast Telephoto Optics',
+      format: 'High-Speed RAW / Adobe Lightroom Classic',
+      location: 'Davao City',
+    },
+  },
+
 ];
 
 export const SELECT_HONORS: HonorItem[] = [

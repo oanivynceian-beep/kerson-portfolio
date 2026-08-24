@@ -99,6 +99,26 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
                   className="max-h-[50vh] sm:max-h-[65vh] w-full object-contain"
                   poster={project.image}
                 />
+              ) : project.externalVideoUrl ? (
+                <div className="w-full aspect-video flex flex-col items-center justify-center">
+                  <iframe
+                    src={`https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(project.externalVideoUrl)}&show_text=false&appId`}
+                    className="w-full h-full"
+                    style={{ minHeight: '56vh', border: 'none' }}
+                    scrolling="no"
+                    allowFullScreen
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                    title={project.title}
+                  />
+                  <a
+                    href={project.externalVideoUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-3 inline-flex items-center gap-2 font-label-caps text-[10px] text-[#8e9192] hover:text-white transition-colors border-b border-[#444748] hover:border-white pb-0.5"
+                  >
+                    <span>Open on Facebook</span>
+                  </a>
+                </div>
               ) : project.gallery && project.gallery.length > 0 ? (
                 <div className="w-full flex flex-col gap-4 overflow-y-auto max-h-[65vh] p-4">
                   {/* The thumbnail / main image */}

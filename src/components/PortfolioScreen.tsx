@@ -123,12 +123,23 @@ export const PortfolioScreen: React.FC<PortfolioScreenProps> = ({
                 >
                   {/* Image Wrap */}
                   <div className={`relative w-full ${aspectClass} bg-[#141414] overflow-hidden`}>
-                    <img
-                      src={item.image}
-                      alt={item.title}
-                      className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out"
-                      loading="lazy"
-                    />
+                    {item.videoSrc ? (
+                      <video
+                        src={item.videoSrc}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className="w-full h-full object-cover group-hover:scale-105 transition-all duration-700 ease-out"
+                      />
+                    ) : (
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                        className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out"
+                        loading="lazy"
+                      />
+                    )}
 
                     {/* Corner format badge */}
                     <div className="absolute top-3 right-3 sm:top-4 sm:right-4 z-10 flex items-center gap-2">
@@ -136,6 +147,12 @@ export const PortfolioScreen: React.FC<PortfolioScreenProps> = ({
                         <span className="bg-emerald-950/90 text-emerald-300 border border-emerald-500/40 font-label-caps text-[9px] px-2 py-0.5 flex items-center gap-1 shadow-md">
                           <Play className="w-2 h-2 fill-emerald-300" />
                           <span>PLAY REEL</span>
+                        </span>
+                      )}
+                      {item.externalVideoUrl && !item.videoSrc && (
+                        <span className="bg-blue-950/90 text-blue-300 border border-blue-500/40 font-label-caps text-[9px] px-2 py-0.5 flex items-center gap-1 shadow-md">
+                          <Play className="w-2 h-2 fill-blue-300" />
+                          <span>FACEBOOK REEL</span>
                         </span>
                       )}
                       <span className="bg-black/80 backdrop-blur-sm border border-white/20 text-white font-label-caps text-[9px] px-2 py-0.5 shadow-md">

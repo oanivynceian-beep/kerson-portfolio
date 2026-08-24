@@ -261,20 +261,22 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ onNavigate, onSelectProj
               className="group cursor-pointer bg-[#1c1b1b] overflow-hidden relative flex flex-col border border-white/5 hover:border-white/30 transition-all duration-300"
             >
               <div className="relative aspect-[4/5] sm:aspect-[16/10] md:aspect-[4/5] overflow-hidden bg-[#0c0c0c]">
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  loading="lazy"
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out"
-                />
-
-                {item.videoSrc && (
-                  <div className="absolute top-4 left-4 z-10">
-                    <span className="bg-black/80 backdrop-blur-md text-emerald-400 border border-emerald-500/40 font-label-caps text-[9px] px-2.5 py-1 flex items-center gap-1.5 shadow-lg">
-                      <Play className="w-2.5 h-2.5 fill-emerald-400" />
-                      <span>PLAYABLE SHOWREEL</span>
-                    </span>
-                  </div>
+                {item.videoSrc ? (
+                  <video
+                    src={item.videoSrc}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-full object-cover group-hover:scale-105 transition-all duration-700 ease-out"
+                  />
+                ) : (
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    loading="lazy"
+                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out"
+                  />
                 )}
 
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-5 sm:p-6">

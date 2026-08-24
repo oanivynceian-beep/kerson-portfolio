@@ -9,6 +9,7 @@ export interface PortfolioItem {
   mainCategory: 'PHOTOGRAPHY' | 'FILM';
   image: string;
   videoSrc?: string;
+  externalVideoUrl?: string;
   aspectRatio: '4/5' | '16/9' | 'square' | '3/4' | '3/2';
   year: string;
   client?: string;
