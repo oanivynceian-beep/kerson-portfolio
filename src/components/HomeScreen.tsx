@@ -21,7 +21,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ onNavigate, onSelectProj
         // Autoplay policy fallback: keep muted
         if (videoRef.current) {
           videoRef.current.muted = true;
-          videoRef.current.play().catch(() => {});
+          videoRef.current.play().catch(() => { });
         }
       });
     }
@@ -75,9 +75,8 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ onNavigate, onSelectProj
         <div className="absolute inset-0 z-0 select-none overflow-hidden">
           {/* Static fallback poster while video streams */}
           <div
-            className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${
-              videoLoaded ? 'opacity-0 pointer-events-none' : 'opacity-60'
-            }`}
+            className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${videoLoaded ? 'opacity-0 pointer-events-none' : 'opacity-60'
+              }`}
             style={{ backgroundImage: `url('${HERO_IMAGE}')` }}
             aria-hidden="true"
           />
@@ -160,7 +159,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ onNavigate, onSelectProj
             variants={itemVariants}
             className="font-sans text-sm sm:text-base md:text-lg text-[#c4c7c8] max-w-2xl mx-auto mb-8 sm:mb-10 md:mb-12 font-normal leading-relaxed px-2"
           >
-            Freelance photographer and videographer based in Davao City. Crafting high-impact sports action, institutional media, sacred liturgical documentaries, and cinematic motion.
+            Freelance photographer and videographer based in Davao City. Crafting high-impact sports action, corporate video highlights, Institutional media, sacred liturgical documentaries, and cinematic motion.
           </motion.p>
 
           <motion.div
