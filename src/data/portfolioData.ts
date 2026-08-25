@@ -127,6 +127,42 @@ import ck23 from './SHOWROOM CK DECOR COMPANY/ck decor - showroom-23.jpg';
 import ck24 from './SHOWROOM CK DECOR COMPANY/ck decor - showroom-24.jpg';
 import ck25 from './SHOWROOM CK DECOR COMPANY/ck decor - showroom-25.jpg';
 
+// CIVIL WED
+import cw1 from './CIVIL WED/503650208_683284357821650_1620034757102101890_n.jpg';
+import cw2 from './CIVIL WED/503705048_683284677821618_2986049478116413669_n.jpg';
+import cw3 from './CIVIL WED/503707206_683284381154981_2249196413078130104_n.jpg';
+import cw4 from './CIVIL WED/503755520_683284097821676_7261005675119207408_n.jpg';
+import cw5 from './CIVIL WED/503770924_683284301154989_2628666786047780239_n.jpg';
+import cw6 from './CIVIL WED/503937466_683284514488301_8339411684338324317_n.jpg';
+import cw7 from './CIVIL WED/503976465_683284134488339_2229407708552316067_n.jpg';
+import cw8 from './CIVIL WED/504001326_683284511154968_8355758071968587119_n.jpg';
+import cw9 from './CIVIL WED/504047474_683284147821671_4542181085072106082_n.jpg';
+import cw10 from './CIVIL WED/504101931_683284604488292_2375874187461009120_n.jpg';
+
+// KAPE NI BORDS
+import kape1 from './KAPE NI BORDS/KAPE-9.jpg';
+import kape2 from './KAPE NI BORDS/KAPE-21.jpg';
+import kape3 from './KAPE NI BORDS/KAPE-39.jpg';
+import kape4 from './KAPE NI BORDS/KAPE-68.jpg';
+import kape5 from './KAPE NI BORDS/KAPE-105.jpg';
+
+// WALL BOULDERING
+import wb1 from './WALL BOULDERING/wall-6.jpg';
+import wb2 from './WALL BOULDERING/wall-35.jpg';
+import wb3 from './WALL BOULDERING/wall-41.jpg';
+import wb4 from './WALL BOULDERING/wall-60.jpg';
+import wb5 from './WALL BOULDERING/wall-92.jpg';
+import wb6 from './WALL BOULDERING/wall-106.jpg';
+import wb7 from './WALL BOULDERING/wall-154.jpg';
+
+// YUKZEL DEBUT
+import yk1 from './YUKZEL DEBUT/1705310324471.jpg';
+import yk2 from './YUKZEL DEBUT/1705310324681 (1).jpg';
+import yk3 from './YUKZEL DEBUT/1705310324996 (1).jpg';
+import yk4 from './YUKZEL DEBUT/1705310325047.jpg';
+import yk5 from './YUKZEL DEBUT/1705310325114.jpg';
+
+
 import vidAbp from './Abp Highlights.mp4';
 import vidArtsita from './Artsita.mp4';
 import vidBotb from './Botb Highlights.mp4';
@@ -139,11 +175,17 @@ import vidLaFlotilla from './La Flotilla 2.mp4';
 import vidParishNight from './Parish Night 26.mp4';
 import vidPaskong from './Paskong Uminano.mp4';
 import vidSde from './Sde Yr Enddd.mp4';
+import vidBenBen from './BEN & BEN.mp4';
+import vidCoachMon from './COACH MON DOCUMENTARY.mp4';
+import vidGinoong from './GINOONG INTRAMURALS SDE.mp4';
+import vidKingRoad from './KING OF THE ROAD.mp4';
+import vidMontesorri from './MONTESORRI 12TH FOUNDATION DAY.mp4';
+import vidRevDan from './REV. DAN BALLIANO ORDINATION.mp4';
 
 export const HERO_IMAGE = 'https://lh3.googleusercontent.com/aida-public/AB6AXuBHcuIbPz7jVJm6Gv0HC_K1iWcDJZJ1UcW3UM9IX6YD7AHMY72qcSnQ9qxGyGcteRAdT-117IYFberQSB9ZLpu4rzrRwJgNKVSkraioYyjJ1u11V_R4yxAVjt4T6dhNNL4-YafXbArRLa8pQaLM0aBcLFysRVoceeUjAnle28EUoCvEwmmBeU93lIvazMcwdQkwzFvW_xWynIKDeDpNre0tGkmylEtPk8Zao7whmxZ0U9lYjgTzIfw';
 
 export const HERO_VIDEO = {
-  src: vid,
+  src: vidKingRoad,
   title: 'Palo Through Tournament & Sports Action Reel',
   driveShareUrl: 'https://drive.google.com/file/d/1pdilAG1U1-zBG3kvmTR8MRCpCRBu6qRY/view?usp=sharing',
 };
@@ -545,6 +587,83 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     },
   },
   {
+    id: 'civil-wed',
+    title: 'Civil Wedding',
+    category: 'Wedding',
+    mainCategory: 'PHOTOGRAPHY',
+    image: cw1,
+    gallery: [cw2, cw3, cw4, cw5, cw6, cw7, cw8, cw9, cw10],
+    aspectRatio: '3/2',
+    year: '2025',
+    director: 'Kerson John Parame',
+    cinematographer: 'Kerson John Parame',
+    description: 'Intimate civil wedding coverage. Capturing the quiet elegance and emotion of a couple\'s special day through honest, candid photography.',
+    technicalSpecs: {
+      camera: 'High-Resolution Mirrorless',
+      lens: 'Prime & Zoom Lenses',
+      format: 'Wedding Still / Adobe Lightroom Classic',
+      location: 'Davao City',
+    },
+  },
+  {
+    id: 'kape-ni-bords',
+    title: 'Kape Ni Bords',
+    category: 'Commercial',
+    mainCategory: 'PHOTOGRAPHY',
+    image: kape1,
+    gallery: [kape2, kape3, kape4, kape5],
+    aspectRatio: '3/2',
+    year: '2024',
+    client: 'Kape Ni Bords',
+    director: 'Kerson John Parame',
+    cinematographer: 'Kerson John Parame',
+    description: 'Commercial and lifestyle photography for Kape Ni Bords. Warm tones, authentic coffee culture, and inviting atmospheres captured in every frame.',
+    technicalSpecs: {
+      camera: 'High-Resolution Mirrorless',
+      lens: '50mm & 85mm Prime',
+      format: 'Commercial Still / Adobe Lightroom Classic',
+      location: 'Davao City',
+    },
+  },
+  {
+    id: 'wall-bouldering',
+    title: 'Wall Bouldering',
+    category: 'Sports',
+    mainCategory: 'PHOTOGRAPHY',
+    image: wb1,
+    gallery: [wb2, wb3, wb4, wb5, wb6, wb7],
+    aspectRatio: '3/2',
+    year: '2024',
+    director: 'Kerson John Parame',
+    cinematographer: 'Kerson John Parame',
+    description: 'Action sports photography at the bouldering wall. Freezing peak moments of strength, balance, and determination with precise timing.',
+    technicalSpecs: {
+      camera: 'High-Speed Mirrorless',
+      lens: 'Fast Prime & Zoom Lenses',
+      format: 'Sports Action Still / Adobe Lightroom Classic',
+      location: 'Davao City',
+    },
+  },
+  {
+    id: 'yukzel-debut',
+    title: 'Yukzel Debut',
+    category: 'Event',
+    mainCategory: 'PHOTOGRAPHY',
+    image: yk1,
+    gallery: [yk2, yk3, yk4, yk5],
+    aspectRatio: '3/2',
+    year: '2024',
+    director: 'Kerson John Parame',
+    cinematographer: 'Kerson John Parame',
+    description: 'Elegant debut coverage for Yukzel. A night of glamour, family, and milestones beautifully documented through cinematic photography.',
+    technicalSpecs: {
+      camera: 'High-Resolution Mirrorless',
+      lens: 'Prime & Zoom Lenses',
+      format: 'Debut Coverage / Adobe Lightroom Classic',
+      location: 'Davao City',
+    },
+  },
+  {
     id: 'vid-abp-highlights',
     title: 'Abp Highlights',
     category: 'Film',
@@ -663,6 +782,66 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspectRatio: '16/9',
     year: '2025',
     description: 'Same Day Edit (SDE) year-end wrap up. Fast-paced, emotional, and expertly timed.',
+  },
+  {
+    id: 'vid-ben-ben',
+    title: 'Ben & Ben',
+    category: 'Film',
+    mainCategory: 'FILM',
+    videoSrc: vidBenBen,
+    aspectRatio: '16/9',
+    year: '2025',
+    description: 'Music-inspired cinematic reel featuring Ben & Ben. Emotional storytelling woven with sound and motion.',
+  },
+  {
+    id: 'vid-coach-mon',
+    title: 'Coach Mon Documentary',
+    category: 'Film',
+    mainCategory: 'FILM',
+    videoSrc: vidCoachMon,
+    aspectRatio: '16/9',
+    year: '2025',
+    description: 'Documentary portrait of Coach Mon. An intimate look at leadership, dedication, and sporting spirit.',
+  },
+  {
+    id: 'vid-ginoong-intramurals',
+    title: 'Ginoong Intramurals SDE',
+    category: 'Film',
+    mainCategory: 'FILM',
+    videoSrc: vidGinoong,
+    aspectRatio: '16/9',
+    year: '2025',
+    description: 'Same Day Edit for the Ginoong Intramurals. Capturing the pride, energy, and camaraderie of the competition.',
+  },
+  {
+    id: 'vid-king-of-the-road',
+    title: 'King of the Road',
+    category: 'Film',
+    mainCategory: 'FILM',
+    videoSrc: vidKingRoad,
+    aspectRatio: '16/9',
+    year: '2026',
+    description: 'High-octane road sports cinematic reel. Speed, grit, and championship moments frozen in motion.',
+  },
+  {
+    id: 'vid-montesorri-foundation',
+    title: 'Montesorri 12th Foundation Day',
+    category: 'Film',
+    mainCategory: 'FILM',
+    videoSrc: vidMontesorri,
+    aspectRatio: '16/9',
+    year: '2025',
+    description: 'Anniversary documentary for Montesorri 12th Foundation Day. Celebrating milestones, community, and growth.',
+  },
+  {
+    id: 'vid-rev-dan-ordination',
+    title: 'Rev. Dan Balliano Ordination',
+    category: 'Film',
+    mainCategory: 'FILM',
+    videoSrc: vidRevDan,
+    aspectRatio: '16/9',
+    year: '2025',
+    description: 'Sacred ordination documentary for Rev. Dan Balliano. A solemn and moving cinematic tribute to a life of faith.',
   },
 
 ];
