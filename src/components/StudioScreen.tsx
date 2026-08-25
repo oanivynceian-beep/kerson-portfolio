@@ -3,6 +3,7 @@ import { STUDIO_PORTRAIT_IMAGE, BTS_IMAGES, SELECT_HONORS, SOFTWARE_STACK, STUDI
 import { NavSection } from '../types';
 import { ArrowRight, Award, Cpu, Sparkles, MapPin, Phone, Instagram, Facebook, CheckCircle } from 'lucide-react';
 import { motion } from 'motion/react';
+import pic from './about.jpg';
 
 interface StudioScreenProps {
   onNavigate: (section: NavSection) => void;
@@ -16,7 +17,7 @@ export const StudioScreen: React.FC<StudioScreenProps> = ({ onNavigate }) => {
         <div className="w-full md:w-1/2 h-[420px] sm:h-[500px] md:h-screen md:sticky md:top-0 relative overflow-hidden bg-[#0e0e0e]">
           <div className="w-full h-full relative">
             <img
-              src="https://scontent.fdvo3-1.fna.fbcdn.net/v/t39.30808-6/480713344_2728925713966560_3683448451750435089_n.jpg?stp=dst-jpg_tt6&cstp=mx1296x1296&ctp=s1296x1296&_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFRsZhO7fdtW82aYxQgtpTOCuMI7-Qi4s0K4wjv5CLizb3JaLC4i2kViIvKI-GYxijMEu-_II4Jg0nc7CANKhuc&_nc_ohc=PBqQ_qP6rI8Q7kNvwEDOsND&_nc_oc=AdqsKVbFDHDBBB2mmKaEFgYJmlnru8XfFfwzzBkkTGvn7uGXtR2Jp934MaIwlHrmrGk&_nc_zt=23&_nc_ht=scontent.fdvo3-1.fna&_nc_gid=goF5JOVmzF2958jidAPntA&_nc_ss=7b2a8&oh=00_AQFIYSSePmcYb7EwJgP6wTtwgrLTUgjLWwM-i1t_6Z1nTQ&oe=6A91AFC2"
+              src={pic}
               alt="Kerson John Parame — Freelance Photographer & Videographer"
               className="object-cover w-full h-full grayscale brightness-95 contrast-110 select-none"
             />
@@ -102,12 +103,12 @@ export const StudioScreen: React.FC<StudioScreenProps> = ({ onNavigate }) => {
                 >
                   <div>
                     <div className="flex items-center justify-between mb-3">
-<div className="flex items-center">
-          <img src={item.logo} alt={`${item.name} logo`} className="w-5 h-5 mr-2" />
-          <span className="font-serif text-lg font-bold text-white">
-            {item.name}
-          </span>
-        </div>
+                      <div className="flex items-center">
+                        <img src={item.logo} alt={`${item.name} logo`} className="w-5 h-5 mr-2" />
+                        <span className="font-serif text-lg font-bold text-white">
+                          {item.name}
+                        </span>
+                      </div>
                       <span className="px-2 py-0.5 bg-[#252525] border border-white/10 font-label-caps text-[9px] text-[#c4c7c8]">
                         {item.shortName}
                       </span>
