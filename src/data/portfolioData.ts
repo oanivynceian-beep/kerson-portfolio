@@ -888,7 +888,7 @@ export const STUDIO_INFO = {
   summary: 'Freelance photographer and videographer based in Davao City. Experienced in high-speed sports coverage, institutional media, sacred liturgical documentaries, and high-impact commercial video editing.',
   philosophyTitle: 'Every frame carries energy, whether frozen in peak athletic speed or flowing in cinematic motion.',
   philosophyBody: 'From tracking lightning-fast sports highlights at Palarong Pambansa 2024 in Marikina City to capturing the timeless, solemn atmosphere of San Pedro Cathedral for the Archdiocese of Davao, my work is driven by intention, timing, and storytelling. Equipped with industry-standard editing suites (Adobe Premiere Pro, Lightroom Classic, Lightroom, and CapCut), I craft visual narratives that resonate across institutional platforms and digital audiences.',
-  email: 'kersonjohnparame@gmail.com',
+  email: 'paramekersonjohn@gmail.com',
   phones: ['09512491780', '09918347451'],
   address: {
     street: 'Davao City',
