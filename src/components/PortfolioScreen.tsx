@@ -3,6 +3,7 @@ import { PORTFOLIO_ITEMS } from '../data/portfolioData';
 import { ProjectCategory, PortfolioItem } from '../types';
 import { Sparkles, Eye, Play, Film, Camera } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import portfolioBg from '../data/portfolio_bg.jpg';
 
 interface PortfolioScreenProps {
   activeCategory: ProjectCategory;
@@ -23,12 +24,17 @@ export const PortfolioScreen: React.FC<PortfolioScreenProps> = ({
   return (
     <div className="w-full pt-24 sm:pt-28 pb-24 sm:pb-32 min-h-screen">
       {/* Header Section */}
-      <header className="px-4 sm:px-8 md:px-16 lg:px-20 py-12 sm:py-16 md:py-20 max-w-[1440px] mx-auto border-b border-[#444748]/20">
+      <header 
+        className="px-4 sm:px-8 md:px-16 lg:px-20 py-12 sm:py-16 md:py-20 mx-auto border-b border-[#444748]/20 relative bg-center bg-cover bg-no-repeat w-full"
+        style={{ backgroundImage: `url(${portfolioBg})` }}
+      >
+        <div className="absolute inset-0 bg-[#0a0a0a]/80 z-0 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-[#0a0a0a]/30 z-0" />
         <motion.div
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="grid grid-cols-1 md:grid-cols-12 gap-6"
+          className="grid grid-cols-1 md:grid-cols-12 gap-6 relative z-10 max-w-[1440px] mx-auto"
         >
           <div className="md:col-start-1 lg:col-start-2 md:col-span-12 lg:col-span-10">
             <span className="font-label-caps text-[#8e9192] text-xs tracking-widest block mb-3 sm:mb-4">
@@ -130,6 +136,8 @@ export const PortfolioScreen: React.FC<PortfolioScreenProps> = ({
                         loop
                         muted
                         playsInline
+                        onContextMenu={(e) => e.preventDefault()}
+                        controlsList="nodownload"
                         className="w-full h-full object-cover group-hover:scale-105 transition-all duration-700 ease-out"
                       />
                     ) : (
@@ -138,6 +146,9 @@ export const PortfolioScreen: React.FC<PortfolioScreenProps> = ({
                         alt={item.title}
                         className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out"
                         loading="lazy"
+                        decoding="async"
+                        draggable={false}
+                        onContextMenu={(e) => e.preventDefault()}
                       />
                     )}
 

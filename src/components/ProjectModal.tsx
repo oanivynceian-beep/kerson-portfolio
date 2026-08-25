@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { PortfolioItem } from '../types';
 import { X, ChevronLeft, ChevronRight, Camera, Film, MapPin, Layers } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
@@ -18,8 +18,14 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
   onNext,
   onOpenContact,
 }) => {
+  const [fullscreenImage, setFullscreenImage] = useState<string | null>(null);
+
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
+      if (fullscreenImage && e.key === 'Escape') {
+        setFullscreenImage(null);
+        return;
+      }
       if (e.key === 'Escape') onClose();
       if (e.key === 'ArrowLeft') onPrev();
       if (e.key === 'ArrowRight') onNext();
@@ -31,7 +37,8 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
   if (!project) return null;
 
   return (
-    <AnimatePresence>
+    <>
+      <AnimatePresence>
       <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-md p-3 sm:p-6 md:p-8">
         {/* Background click to close */}
         <motion.div
@@ -96,7 +103,9 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
                   src={project.videoSrc}
                   controls
                   autoPlay
-                  className="max-h-[50vh] sm:max-h-[65vh] w-full object-contain"
+                  controlsList="nodownload"
+                  onContextMenu={(e) => e.preventDefault()}
+                  className="max-h-[50vh] sm:max-h-[65vh] w-full object-contain outline-none"
                   poster={project.image}
                 />
               ) : project.externalVideoUrl ? (
@@ -125,7 +134,12 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
                   <img
                     src={project.image}
                     alt={`${project.title} - Main`}
-                    className="w-full h-auto object-contain select-none"
+                    className="w-full h-auto object-contain select-none cursor-zoom-in"
+                    loading="lazy"
+                    decoding="async"
+                    draggable={false}
+                    onContextMenu={(e) => e.preventDefault()}
+                    onClick={() => setFullscreenImage(project.image || null)}
                   />
                   {/* The rest of the gallery */}
                   {project.gallery.map((img, idx) => (
@@ -133,7 +147,12 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
                       key={idx}
                       src={img}
                       alt={`${project.title} - Gallery ${idx + 1}`}
-                      className="w-full h-auto object-contain select-none"
+                      className="w-full h-auto object-contain select-none cursor-zoom-in"
+                      loading="lazy"
+                      decoding="async"
+                      draggable={false}
+                      onContextMenu={(e) => e.preventDefault()}
+                      onClick={() => setFullscreenImage(img)}
                     />
                   ))}
                 </div>
@@ -141,7 +160,12 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="max-h-[50vh] sm:max-h-[65vh] w-auto object-contain select-none"
+                  className="max-h-[50vh] sm:max-h-[65vh] w-auto object-contain select-none cursor-zoom-in"
+                  loading="lazy"
+                  decoding="async"
+                  draggable={false}
+                  onContextMenu={(e) => e.preventDefault()}
+                  onClick={() => setFullscreenImage(project.image || null)}
                 />
               )}
             </div>
@@ -215,5 +239,35 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
         </motion.div>
       </div>
     </AnimatePresence>
+
+      <AnimatePresence>
+        {fullscreenImage && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[70] bg-black/95 flex items-center justify-center p-4 backdrop-blur-md"
+            onClick={() => setFullscreenImage(null)}
+          >
+            <button
+              onClick={() => setFullscreenImage(null)}
+              className="absolute top-6 right-6 p-2 bg-white/10 hover:bg-white/20 text-white rounded-full transition-colors z-[71]"
+            >
+              <X className="w-6 h-6" />
+            </button>
+            <motion.img
+              initial={{ scale: 0.95 }}
+              animate={{ scale: 1 }}
+              exit={{ scale: 0.95 }}
+              src={fullscreenImage}
+              alt="Fullscreen view"
+              className="max-w-full max-h-full object-contain select-none cursor-zoom-out"
+              draggable={false}
+              onContextMenu={(e) => e.preventDefault()}
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
   );
 };

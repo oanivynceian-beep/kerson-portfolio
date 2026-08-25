@@ -65,6 +65,81 @@ import har8 from './HOT AUGUST RACES/DSC09500.jpg';
 import har9 from './HOT AUGUST RACES/DSC09806.jpg';
 import har10 from './HOT AUGUST RACES/DSC09866.jpg';
 
+import dylan1 from './BABY DYLLON/_MG_4792.jpg';
+import dylan2 from './BABY DYLLON/_MG_4798.jpg';
+import dylan3 from './BABY DYLLON/_MG_4827.jpg';
+import dylan4 from './BABY DYLLON/_MG_4839.jpg';
+import dylan5 from './BABY DYLLON/_MG_4845.jpg';
+import dylan6 from './BABY DYLLON/_MG_4973.jpg';
+import dylan7 from './BABY DYLLON/_MG_5015.jpg';
+import dylan8 from './BABY DYLLON/_MG_5169.jpg';
+
+import cathy1 from './CATHY DEBUT/cathy debut-3.jpg';
+import cathy2 from './CATHY DEBUT/cathy debut-5.jpg';
+import cathy3 from './CATHY DEBUT/cathy debut-10.jpg';
+import cathy4 from './CATHY DEBUT/cathy debut-11.jpg';
+import cathy5 from './CATHY DEBUT/cathy debut-23.jpg';
+import cathy6 from './CATHY DEBUT/cathy debut-26.jpg';
+import cathy7 from './CATHY DEBUT/cathy debut-36.jpg';
+import cathy8 from './CATHY DEBUT/cathy debut-45.jpg';
+import cathy9 from './CATHY DEBUT/cathy debut-47.jpg';
+import cathy10 from './CATHY DEBUT/cathy debut-369.jpg';
+import cathy11 from './CATHY DEBUT/cathy debut-431.jpg';
+
+import renato1 from './RENATO WEDDING/WEDD-4.jpg';
+import renato2 from './RENATO WEDDING/WEDD-46.jpg';
+import renato3 from './RENATO WEDDING/WEDD-59.jpg';
+import renato4 from './RENATO WEDDING/WEDD-85.jpg';
+import renato5 from './RENATO WEDDING/WEDD-368.jpg';
+import renato6 from './RENATO WEDDING/WEDD-395.jpg';
+import renato7 from './RENATO WEDDING/WEDD-707.jpg';
+
+import dan1 from './REV. DAN ORDINATION/KIJ02377.jpg';
+import dan2 from './REV. DAN ORDINATION/KIJ02385.jpg';
+import dan3 from './REV. DAN ORDINATION/KIJ02386.jpg';
+import dan4 from './REV. DAN ORDINATION/KIJ02399.jpg';
+import dan5 from './REV. DAN ORDINATION/pics sa tunga-2.jpg';
+import dan6 from './REV. DAN ORDINATION/pics sa tunga-3.jpg';
+
+import ck1 from './SHOWROOM CK DECOR COMPANY/ck decor - showroom.jpg';
+import ck2 from './SHOWROOM CK DECOR COMPANY/ck decor - showroom-2.jpg';
+import ck3 from './SHOWROOM CK DECOR COMPANY/ck decor - showroom-3.jpg';
+import ck4 from './SHOWROOM CK DECOR COMPANY/ck decor - showroom-4.jpg';
+import ck5 from './SHOWROOM CK DECOR COMPANY/ck decor - showroom-5.jpg';
+import ck6 from './SHOWROOM CK DECOR COMPANY/ck decor - showroom-6.jpg';
+import ck7 from './SHOWROOM CK DECOR COMPANY/ck decor - showroom-7.jpg';
+import ck8 from './SHOWROOM CK DECOR COMPANY/ck decor - showroom-8.jpg';
+import ck9 from './SHOWROOM CK DECOR COMPANY/ck decor - showroom-9.jpg';
+import ck10 from './SHOWROOM CK DECOR COMPANY/ck decor - showroom-10.jpg';
+import ck11 from './SHOWROOM CK DECOR COMPANY/ck decor - showroom-11.jpg';
+import ck12 from './SHOWROOM CK DECOR COMPANY/ck decor - showroom-12.jpg';
+import ck13 from './SHOWROOM CK DECOR COMPANY/ck decor - showroom-13.jpg';
+import ck14 from './SHOWROOM CK DECOR COMPANY/ck decor - showroom-14.jpg';
+import ck15 from './SHOWROOM CK DECOR COMPANY/ck decor - showroom-15.jpg';
+import ck16 from './SHOWROOM CK DECOR COMPANY/ck decor - showroom-16.jpg';
+import ck17 from './SHOWROOM CK DECOR COMPANY/ck decor - showroom-17.jpg';
+import ck18 from './SHOWROOM CK DECOR COMPANY/ck decor - showroom-18.jpg';
+import ck19 from './SHOWROOM CK DECOR COMPANY/ck decor - showroom-19.jpg';
+import ck20 from './SHOWROOM CK DECOR COMPANY/ck decor - showroom-20.jpg';
+import ck21 from './SHOWROOM CK DECOR COMPANY/ck decor - showroom-21.jpg';
+import ck22 from './SHOWROOM CK DECOR COMPANY/ck decor - showroom-22.jpg';
+import ck23 from './SHOWROOM CK DECOR COMPANY/ck decor - showroom-23.jpg';
+import ck24 from './SHOWROOM CK DECOR COMPANY/ck decor - showroom-24.jpg';
+import ck25 from './SHOWROOM CK DECOR COMPANY/ck decor - showroom-25.jpg';
+
+import vidAbp from './Abp Highlights.mp4';
+import vidArtsita from './Artsita.mp4';
+import vidBotb from './Botb Highlights.mp4';
+import vidCeemula from './Ceemula W.Submp4.mp4';
+import vidDoc from './Doc Mccornick.mp4';
+import vidHappyFiesta from './Happy Fiesta Sidlp.mp4';
+import vidIntrams from './Intrams Lnhs.mp4';
+import vidKaMut from './Ka Mut Ya On.mp4';
+import vidLaFlotilla from './La Flotilla 2.mp4';
+import vidParishNight from './Parish Night 26.mp4';
+import vidPaskong from './Paskong Uminano.mp4';
+import vidSde from './Sde Yr Enddd.mp4';
+
 export const HERO_IMAGE = 'https://lh3.googleusercontent.com/aida-public/AB6AXuBHcuIbPz7jVJm6Gv0HC_K1iWcDJZJ1UcW3UM9IX6YD7AHMY72qcSnQ9qxGyGcteRAdT-117IYFberQSB9ZLpu4rzrRwJgNKVSkraioYyjJ1u11V_R4yxAVjt4T6dhNNL4-YafXbArRLa8pQaLM0aBcLFysRVoceeUjAnle28EUoCvEwmmBeU93lIvazMcwdQkwzFvW_xWynIKDeDpNre0tGkmylEtPk8Zao7whmxZ0U9lYjgTzIfw';
 
 export const HERO_VIDEO = {
@@ -334,6 +409,260 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
       format: 'High-Speed RAW / Adobe Lightroom Classic',
       location: 'Davao City',
     },
+  },
+  {
+    id: 'baby-dyllon',
+    title: 'Baby Dyllon',
+    category: 'Portrait',
+    mainCategory: 'PHOTOGRAPHY',
+    image: dylan1,
+    gallery: [
+      dylan2,
+      dylan3,
+      dylan4,
+      dylan5,
+      dylan6,
+      dylan7,
+      dylan8
+    ],
+    aspectRatio: '4/5',
+    year: '2024',
+    client: 'Baby Dyllon',
+    director: 'Kerson John Parame',
+    cinematographer: 'Kerson John Parame',
+    description: 'Precious newborn and baby portrait session for Baby Dyllon. Soft, warm, and timeless photography capturing those fleeting early moments. Click to view the full gallery.',
+    technicalSpecs: {
+      camera: 'High-Resolution Mirrorless',
+      lens: 'Portrait Primes',
+      format: 'Editorial Still / Adobe Lightroom Classic',
+      location: 'Davao City',
+    },
+  },
+  {
+    id: 'cathy-debut',
+    title: 'Cathy Debut',
+    category: 'Portrait',
+    mainCategory: 'PHOTOGRAPHY',
+    image: cathy1,
+    gallery: [
+      cathy2,
+      cathy3,
+      cathy4,
+      cathy5,
+      cathy6,
+      cathy7,
+      cathy8,
+      cathy9,
+      cathy10,
+      cathy11
+    ],
+    aspectRatio: '4/5',
+    year: '2024',
+    client: 'Cathy',
+    director: 'Kerson John Parame',
+    cinematographer: 'Kerson John Parame',
+    description: 'A beautiful and memorable debut celebration for Cathy. Candid moments and elegant portraits captured throughout the event. Click to view the full gallery.',
+    technicalSpecs: {
+      camera: 'High-Resolution Mirrorless',
+      lens: 'Portrait Primes',
+      format: 'Editorial Still / Adobe Lightroom Classic',
+      location: 'Davao City',
+    },
+  },
+  {
+    id: 'renato-wedding',
+    title: 'Renato Wedding',
+    category: 'Wedding',
+    mainCategory: 'PHOTOGRAPHY',
+    image: renato1,
+    gallery: [
+      renato2,
+      renato3,
+      renato4,
+      renato5,
+      renato6,
+      renato7
+    ],
+    aspectRatio: '16/9',
+    year: '2024',
+    client: 'Renato & Bride',
+    director: 'Kerson John Parame',
+    cinematographer: 'Kerson John Parame',
+    description: 'A solemn and joyous wedding celebration. Capturing the love, vows, and unforgettable moments between the couple. Click to view the full gallery.',
+    technicalSpecs: {
+      camera: 'High-Resolution Mirrorless',
+      lens: 'Versatile Primes',
+      format: 'Editorial Still / Adobe Lightroom Classic',
+      location: 'Davao City',
+    },
+  },
+  {
+    id: 'rev-dan-ordination',
+    title: 'Rev. Dan Ordination',
+    category: 'Event',
+    mainCategory: 'PHOTOGRAPHY',
+    image: dan1,
+    gallery: [
+      dan2,
+      dan3,
+      dan4,
+      dan5,
+      dan6
+    ],
+    aspectRatio: '4/5',
+    year: '2024',
+    client: 'Rev. Dan',
+    director: 'Kerson John Parame',
+    cinematographer: 'Kerson John Parame',
+    description: 'The sacred and solemn ordination of Rev. Dan. Capturing the beautiful liturgical ceremonies and blessings. Click to view the full gallery.',
+    technicalSpecs: {
+      camera: 'Low-Light Full-Frame Sensor',
+      lens: 'Versatile Primes',
+      format: 'Ambient Lit RAW / Adobe Lightroom Classic',
+      location: 'Davao City',
+    },
+  },
+  {
+    id: 'showroom-ck-decor',
+    title: 'CK Decor Showroom',
+    category: 'Architecture',
+    mainCategory: 'PHOTOGRAPHY',
+    image: ck1,
+    gallery: [
+      ck2, ck3, ck4, ck5, ck6, ck7, ck8, ck9, ck10, ck11, ck12, ck13, ck14, ck15, ck16, ck17, ck18, ck19, ck20, ck21, ck22, ck23, ck24, ck25
+    ],
+    aspectRatio: '16/9',
+    year: '2024',
+    client: 'CK Decor Company',
+    director: 'Kerson John Parame',
+    cinematographer: 'Kerson John Parame',
+    description: 'Showroom interior and product photography for CK Decor Company. Highlighting design, aesthetics, and furniture details. Click to view the full gallery.',
+    technicalSpecs: {
+      camera: 'High-Resolution Mirrorless',
+      lens: 'Wide & Macro Lenses',
+      format: 'Editorial Still / Adobe Lightroom Classic',
+      location: 'Davao City',
+    },
+  },
+  {
+    id: 'vid-abp-highlights',
+    title: 'Abp Highlights',
+    category: 'Film',
+    mainCategory: 'FILM',
+    videoSrc: vidAbp,
+    aspectRatio: '16/9',
+    year: '2024',
+    description: 'Dynamic event highlights and recap cinematic reel. Experience the energy and key moments.',
+  },
+  {
+    id: 'vid-artsita',
+    title: 'Artsita',
+    category: 'Film',
+    mainCategory: 'FILM',
+    videoSrc: vidArtsita,
+    aspectRatio: '16/9',
+    year: '2024',
+    description: 'Creative and artistic videography project. A visual narrative capturing emotion and style.',
+  },
+  {
+    id: 'vid-botb-highlights',
+    title: 'BOTB Highlights',
+    category: 'Film',
+    mainCategory: 'FILM',
+    videoSrc: vidBotb,
+    aspectRatio: '16/9',
+    year: '2024',
+    description: 'Battle of the Bands event highlights. High-energy performance and crowd coverage.',
+  },
+  {
+    id: 'vid-ceemula',
+    title: 'Ceemula W.Sub',
+    category: 'Film',
+    mainCategory: 'FILM',
+    videoSrc: vidCeemula,
+    aspectRatio: '16/9',
+    year: '2024',
+    description: 'Cinematic short and promotional cut with subtitles. A narrative-driven visual experience.',
+  },
+  {
+    id: 'vid-doc-mccornick',
+    title: 'Doc McCornick',
+    category: 'Film',
+    mainCategory: 'FILM',
+    videoSrc: vidDoc,
+    aspectRatio: '16/9',
+    year: '2024',
+    description: 'Documentary profile and interview styling. Capturing stories with a journalistic approach.',
+  },
+  {
+    id: 'vid-happy-fiesta',
+    title: 'Happy Fiesta Sidlp',
+    category: 'Film',
+    mainCategory: 'FILM',
+    videoSrc: vidHappyFiesta,
+    aspectRatio: '16/9',
+    year: '2024',
+    description: 'Festive celebration and cultural documentary. Full coverage of community events and traditions.',
+  },
+  {
+    id: 'vid-intrams-lnhs',
+    title: 'Intramurals LNHS',
+    category: 'Film',
+    mainCategory: 'FILM',
+    videoSrc: vidIntrams,
+    aspectRatio: '16/9',
+    year: '2024',
+    description: 'School intramurals sports highlights. Action-packed coverage of competitive athletic events.',
+  },
+  {
+    id: 'vid-ka-mut-ya',
+    title: 'Ka Mut Ya On',
+    category: 'Film',
+    mainCategory: 'FILM',
+    videoSrc: vidKaMut,
+    aspectRatio: '16/9',
+    year: '2024',
+    description: 'Event and lifestyle documentary reel. Beautiful storytelling through motion and grading.',
+  },
+  {
+    id: 'vid-la-flotilla',
+    title: 'La Flotilla 2',
+    category: 'Film',
+    mainCategory: 'FILM',
+    videoSrc: vidLaFlotilla,
+    aspectRatio: '16/9',
+    year: '2024',
+    description: 'Cinematic commercial and event coverage. Highlighting moments with precise camera work.',
+  },
+  {
+    id: 'vid-parish-night',
+    title: 'Parish Night 26\'',
+    category: 'Film',
+    mainCategory: 'FILM',
+    videoSrc: vidParishNight,
+    aspectRatio: '16/9',
+    year: '2026',
+    description: 'Solemn and celebratory Parish Night coverage. Capturing the spirit of the community.',
+  },
+  {
+    id: 'vid-paskong',
+    title: 'Paskong Uminano',
+    category: 'Film',
+    mainCategory: 'FILM',
+    videoSrc: vidPaskong,
+    aspectRatio: '16/9',
+    year: '2025',
+    description: 'Christmas celebration cinematic recap. Warm, festive, and memorable storytelling.',
+  },
+  {
+    id: 'vid-sde',
+    title: 'SDE Year End',
+    category: 'Film',
+    mainCategory: 'FILM',
+    videoSrc: vidSde,
+    aspectRatio: '16/9',
+    year: '2025',
+    description: 'Same Day Edit (SDE) year-end wrap up. Fast-paced, emotional, and expertly timed.',
   },
 
 ];

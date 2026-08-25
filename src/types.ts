@@ -5,9 +5,9 @@ export type ProjectCategory = 'ALL' | 'PHOTOGRAPHY' | 'FILM';
 export interface PortfolioItem {
   id: string;
   title: string;
-  category: 'Portrait' | 'Architecture' | 'Editorial' | 'Film' | 'Commercial';
+  category: 'Portrait' | 'Architecture' | 'Editorial' | 'Film' | 'Commercial' | 'Wedding' | 'Event';
   mainCategory: 'PHOTOGRAPHY' | 'FILM';
-  image: string;
+  image?: string;
   videoSrc?: string;
   externalVideoUrl?: string;
   aspectRatio: '4/5' | '16/9' | 'square' | '3/4' | '3/2';
