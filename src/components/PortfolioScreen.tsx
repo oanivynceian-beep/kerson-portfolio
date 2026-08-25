@@ -3,7 +3,7 @@ import { PORTFOLIO_ITEMS } from '../data/portfolioData';
 import { ProjectCategory, PortfolioItem } from '../types';
 import { Sparkles, Eye, Play, Film, Camera } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import portfolioBg from '../data/portfolio_bg.jpg';
+import portfolioBg from '../data/port.jpg';
 
 interface PortfolioScreenProps {
   activeCategory: ProjectCategory;
@@ -24,7 +24,7 @@ export const PortfolioScreen: React.FC<PortfolioScreenProps> = ({
   return (
     <div className="w-full pt-24 sm:pt-28 pb-24 sm:pb-32 min-h-screen">
       {/* Header Section */}
-      <header 
+      <header
         className="px-4 sm:px-8 md:px-16 lg:px-20 py-12 sm:py-16 md:py-20 mx-auto border-b border-[#444748]/20 relative bg-center bg-cover bg-no-repeat w-full"
         style={{ backgroundImage: `url(${portfolioBg})` }}
       >
@@ -57,11 +57,10 @@ export const PortfolioScreen: React.FC<PortfolioScreenProps> = ({
             <li>
               <button
                 onClick={() => onCategoryChange('ALL')}
-                className={`px-3 py-2 sm:px-4 sm:py-2 uppercase tracking-widest transition-all duration-300 cursor-pointer min-h-[44px] flex items-center gap-1.5 ${
-                  activeCategory === 'ALL'
+                className={`px-3 py-2 sm:px-4 sm:py-2 uppercase tracking-widest transition-all duration-300 cursor-pointer min-h-[44px] flex items-center gap-1.5 ${activeCategory === 'ALL'
                     ? 'bg-white text-black font-bold'
                     : 'text-[#8e9192] hover:text-white bg-white/5 border border-white/10'
-                }`}
+                  }`}
               >
                 <span>ALL WORKS</span>
                 <span className="text-[10px] opacity-70">({PORTFOLIO_ITEMS.length})</span>
@@ -70,11 +69,10 @@ export const PortfolioScreen: React.FC<PortfolioScreenProps> = ({
             <li>
               <button
                 onClick={() => onCategoryChange('PHOTOGRAPHY')}
-                className={`px-3 py-2 sm:px-4 sm:py-2 uppercase tracking-widest transition-all duration-300 cursor-pointer min-h-[44px] flex items-center gap-1.5 ${
-                  activeCategory === 'PHOTOGRAPHY'
+                className={`px-3 py-2 sm:px-4 sm:py-2 uppercase tracking-widest transition-all duration-300 cursor-pointer min-h-[44px] flex items-center gap-1.5 ${activeCategory === 'PHOTOGRAPHY'
                     ? 'bg-white text-black font-bold'
                     : 'text-[#8e9192] hover:text-white bg-white/5 border border-white/10'
-                }`}
+                  }`}
               >
                 <Camera className="w-3.5 h-3.5" />
                 <span>PHOTOGRAPHY</span>
@@ -83,11 +81,10 @@ export const PortfolioScreen: React.FC<PortfolioScreenProps> = ({
             <li>
               <button
                 onClick={() => onCategoryChange('FILM')}
-                className={`px-3 py-2 sm:px-4 sm:py-2 uppercase tracking-widest transition-all duration-300 cursor-pointer min-h-[44px] flex items-center gap-1.5 ${
-                  activeCategory === 'FILM'
+                className={`px-3 py-2 sm:px-4 sm:py-2 uppercase tracking-widest transition-all duration-300 cursor-pointer min-h-[44px] flex items-center gap-1.5 ${activeCategory === 'FILM'
                     ? 'bg-white text-black font-bold'
                     : 'text-[#8e9192] hover:text-white bg-white/5 border border-white/10'
-                }`}
+                  }`}
               >
                 <Film className="w-3.5 h-3.5" />
                 <span>VIDEOGRAPHY</span>
